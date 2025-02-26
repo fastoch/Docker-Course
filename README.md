@@ -79,6 +79,7 @@ The terminology many people use for this is "bare metal".
 With a bare metal system, the operating system, binaries/libraries, and applications are installed and run directly onto the physical hardware.  
 
 Direct access to the hardware can be useful for specific cases, but can lead to:
+- hellish dependency conflicts
 - low utilization efficiency
 - large blast radius
 - slow start up and shut down speed
@@ -87,8 +88,87 @@ Direct access to the hardware can be useful for specific cases, but can lead to:
 ### Virtual Machines
 
 Virtual machines use a system called a "hypervisor" that can carve up the host resources into multiple isolated virtual hardware configurations 
-which you can then treat as their own systems, each with an OS, bin.  
+which you can then treat as their own systems (each with an OS, binaries/libraries, and applications).  
 
+This helps improve upon some of the challenges presented by bare metal:
+- no dependency conflicts
+- better utilization efficiency
+- small blast radius
+- faster startup and shutdown
+- faster provisioning and decommissioning
+
+### Containers
+
+Containers are similar to virtual machines in that they provide an isolated environment for installing and configuring binaries/libraries, 
+but rather than virtualizing at the hardware layer, containers use native Linux features (cgroups + namespaces) to provide that isolation while 
+still sharing the same kernel.  
+
+This approach results in containers being more lightweight than virtual machines, but not providing the same level of isolation:  
+- no dependency conflicts
+- even better utilization efficiency
+- small blast radius
+- even faster startup and shutdown
+- even faster provisioning and decommissioning
+
+---
+
+# Part 2 - Technology Overview
+
+This chapter explores the 3 core Linux features that enable containers to function:
+- cgroups
+- namespaces
+- union filesystems
+
+## Linux Building Blocks
+
+
+
+## Docker application architecture
+
+
+---
+
+# Part 3 - 
+
+---
+
+# Part 4 - 
+
+---
+
+# Part 5 - 
+
+---
+
+# Part 6 - 
+
+---
+
+# Part 7 - 
+
+---
+
+# Part 8 - 
+
+---
+
+# Part 9 - 
+
+---
+
+# Part 10 - 
+
+---
+
+# Part 11 - 
+
+---
+
+# Part 12 - 
+
+--- 
+
+# Part 13 - 
 
 
 
