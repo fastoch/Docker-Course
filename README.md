@@ -22,18 +22,24 @@ And it will be deployed via **Docker Swarm**, the container orchestrator built i
 
 ---
 
-# Part 1 - History and Motivation (behind Containers)
+# Part 1 - History and Motivation 
 
 ## Containers for Development
 
-To simplify the development environment set up, we use containers that already **contain** all that we need to code, test, and run our application.  
-This way, we don't have to go over a tedious and complex configuration process every time we need to set up our dev environment on a new machine.  
-We build a Docker image once, we run a container from that image in order to test it, 
+To simplify the development environment set up, we use containers that already **contain** all that we need to code, test & run our application.  
+This way, we don't have to set up our dev environment every time we start using a new machine, which can be time consuming.  
+
+We just build a Docker image once, then we run a Docker container from this image, and we log in to that container to start working.   
+It's fast, it's repeatable, it's lightweight, it's scalable, and it's secure.
+
+All we need is an host system that can run Docker...  
 
 ## Containers for Deployment
 
+What is true for setting up a development environment is also true for deploying applications, or updating them.  
+We just build an image containing all the things our application needs to run, we test it, and we run a container from it
 
 
 
 
-@5/284
+@7/284
