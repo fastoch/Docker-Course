@@ -128,47 +128,47 @@ This chapter explores the 3 core Linux features that enable containers to functi
 
 ---
 
-# Part 3 - 
+# Part 3 - Installation and Set Up
 
 ---
 
-# Part 4 - 
+# Part 4 - Using 3rd Party Container Images
 
 ---
 
-# Part 5 - 
+# Part 5 - Example Web Application
 
 ---
 
-# Part 6 - 
+# Part 6 - Building Container Images
 
 ---
 
-# Part 7 - 
+# Part 7 - Container Registries
 
 ---
 
-# Part 8 - 
+# Part 8 - Running Containers
 
 ---
 
-# Part 9 - 
+# Part 9 - Container Security
 
 ---
 
-# Part 10 - 
+# Part 10 - Interacting with Docker Objects
 
 ---
 
-# Part 11 - 
+# Part 11 - Development Workflow
 
 ---
 
-# Part 12 - 
+# Part 12 - Deploying Containers
 
 --- 
 
-# Part 13 - 
+# Part 13 - Course Wrap Up
 
 
 
