@@ -71,6 +71,23 @@ Docker is a specific implementation of the OCI standard.
 
 ## History of Virtualization
 
+### Bare metal
+
+Before virtualization was invented, all programs ran directly on the host system.  
+The terminology many people use for this is "bare metal".  
+
+With a bare metal system, the operating system, binaries/libraries, and applications are installed and run directly onto the physical hardware.  
+
+Direct access to the hardware can be useful for specific cases, but can lead to:
+- low utilization efficiency
+- large blast radius
+- slow start up and shut down speed
+- very slow provisioning & decommissioning
+
+### Virtual Machines
+
+Virtual machines use a system called a "hypervisor" that can carve up the host resources into multiple isolated virtual hardware configurations 
+which you can then treat as their own systems, each with an OS, bin.  
 
 
 
