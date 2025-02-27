@@ -131,9 +131,41 @@ That being said, Docker made huge strides in developer experience, which helped 
 
 ### Cgroups
 
-Cgroups are Linux kernel feature
+Cgroups are a Linux kernel feature which allows processes to be organized into hierarchical groups whose usage of various types of resources can 
+then be limited and monitored.  
+
+By using cgroups, a container runtime is able to specify what a container should be able to use. For example:
+- use up to xx% of CPU cycles (cpu.shares)
+- use up to xxMB of memory (memory.limit_in_bytes)
+- throttle reads to xxMB/s (blkio.throttle.read_bps_device)
+
+### Namespaces 
+
+A namespace wraps a global system resource in an abstraction that makes it appear to the processes within that namespace 
+that they have their own isolated instance of the global resource.  
+
+Changes to the global resource are visible to other processes that are members of the namespace, but are invisible to other processes.  
+
+With namespaces, a container runtime is able to: 
+- keep processes outside of the container invisible within the container
+- map the user inside the container to a different user on the host
+- Create separate views of system resources for each container, such as process IDs, network interfaces, and file systems
+- Enable containers to run as root inside their namespace without actually being root on the host system, enhancing security
+- Manage resource allocation and limit access to host resources, preventing containers from disrupting the host or other containers
+- Provide a secure and stable environment by leveraging features of the host operating system to create isolated execution contexts
+
+### Union filesystems
+
+A union filesystem allows files and directories of separate filesystems, known as branches, to be transparently overlaid, forming a single coherent filesystem.   
 
 ## Docker application architecture
+
+While Docker is often referred to as a container runtime, it's important to note that Docker itself is a complete platform built on top of lower-level components.  
+
+The Docker stack consists of several parts:
+- **Docker CLI** (docker-cli): The user interface for interacting with Docker.
+- **Docker daemon** (containerd): A high-level daemon process that manages the container environment.
+- **RunC**: The actual low-level container runtime responsible for creating and running containers1.
 
 
 ---
