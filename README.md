@@ -121,7 +121,17 @@ This chapter explores the 3 core Linux features that enable containers to functi
 
 ## Linux Building Blocks
 
+Cgroups and namespaces to provide resource constraints and application isolation respectively.  
+Containers use a union filesystem that enables images to be built upon common layers, making building and sharing images fast and efficient.  
 
+### Docker did not invent containers
+
+For example, LXC containers (https://linuxcontainers.org/) was implemented in 2008, five years before Docker launched.   
+That being said, Docker made huge strides in developer experience, which helped container technologies gain mass adoption.  
+
+### Cgroups
+
+Cgroups are Linux kernel feature
 
 ## Docker application architecture
 
