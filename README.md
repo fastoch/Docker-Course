@@ -11,7 +11,7 @@
 
 ## Demo Application
 
-It will be a minimal 3-tier web application with:
+The application we will develop will be a minimal 3-tier web application with:
 - a React front-end
 - 2 API implementations:
   - Node.js
@@ -157,6 +157,20 @@ With namespaces, a container runtime is able to:
 ### Union filesystems
 
 A union filesystem allows files and directories of separate filesystems, known as branches, to be transparently overlaid, forming a single coherent filesystem.   
+Contents of directories which have the same path within the merged branches will be seen together in a single merged directory, within the new virtual filesystem.  
+
+This approach allows for efficient use of space because common layers can be shared.  
+For example, if multiple containers from the same image are created on a single host, the container runtime only has to allocate a thin overlay specific to each container, 
+while the underlying image layers can be shared.  
+
+More detail on understanding the implications of these filesystems on data persistence can be found in Part 4 - Using 3rd party containers.  
+
+---
+
+Docker provides a convenient user experience (UX) by packaging the underlying technologies (namespaces, cgroups, and union filesystems) into an easy-to-use desktop application.  
+For a deeper exploration of these topics
+
+---
 
 ## Docker application architecture
 
