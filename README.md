@@ -169,6 +169,7 @@ More detail on understanding the implications of these filesystems on data persi
 ---
 
 Docker provides a convenient user experience (UX) by packaging the underlying technologies (namespaces, cgroups, and union filesystems) into an easy-to-use desktop application.  
+
 For a deeper exploration of these topics, check out this video by Joshua Jebaraj exploring cgroups and namespaces:  
 https://www.youtube.com/watch?v=9ivFrXgB2Zg
 
