@@ -4,6 +4,7 @@
 - https://www.youtube.com/watch?v=RqTEHSBrYFw
 - https://courses.devopsdirective.com/docker-beginner-to-pro/lessons/00-introduction/01-main
 - https://github.com/sidpalas/devops-directive-docker-course
+- https://www.youtube.com/playlist?list=PLwnwdc26IMUDOj-inapvz1SL46Iwkh-jK
 
 ---
 
@@ -168,11 +169,12 @@ More detail on understanding the implications of these filesystems on data persi
 ---
 
 Docker provides a convenient user experience (UX) by packaging the underlying technologies (namespaces, cgroups, and union filesystems) into an easy-to-use desktop application.  
-For a deeper exploration of these topics
+For a deeper exploration of these topics, check out this video by Joshua Jebaraj exploring cgroups and namespaces:  
+https://www.youtube.com/watch?v=9ivFrXgB2Zg
 
 ---
 
-## Docker application architecture
+## Docker application architecture (continue from there)
 
 While Docker is often referred to as a container runtime, it's important to note that Docker itself is a complete platform built on top of lower-level components.  
 
