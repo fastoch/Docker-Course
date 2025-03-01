@@ -175,14 +175,12 @@ https://www.youtube.com/watch?v=9ivFrXgB2Zg
 
 ---
 
-## Docker application architecture (continue from there)
+## Docker application architecture
 
-While Docker is often referred to as a container runtime, it's important to note that Docker itself is a complete platform built on top of lower-level components.  
+### Docker System Components
 
-The Docker stack consists of several parts:
-- **Docker CLI** (docker-cli): The user interface for interacting with Docker.
-- **Docker daemon** (containerd): A high-level daemon process that manages the container environment.
-- **RunC**: The actual low-level container runtime responsible for creating and running containers1.
+It is useful to break down the components within the Docker ecosystem.  
+
 
 
 ---
